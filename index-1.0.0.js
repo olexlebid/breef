@@ -31,6 +31,12 @@ $(function () {
     });
   }
 
+  // modal window
+  if (!localStorage.getItem('modalWasShown')) {
+    $('.open-modal').click();
+    localStorage.setItem('modalWasShown', true);
+  }
+
   // constants
   const orange = '#d96e34';
   const purple = '#f1eafb';
