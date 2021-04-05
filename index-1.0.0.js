@@ -33,8 +33,10 @@ $(function () {
 
   // modal window
   if (!localStorage.getItem('modalWasShown')) {
-    $('.open-modal').click();
-    localStorage.setItem('modalWasShown', true);
+    setTimeout(() => {
+      $('.open-modal').click();
+      localStorage.setItem('modalWasShown', true);
+    }, 3000);
   }
 
   // constants
